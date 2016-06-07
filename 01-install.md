@@ -46,13 +46,13 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Answer: I have Python 3 installed on my machine since it is what I started with. I really did not see the reason to get Python 2 installed too since then I would always have to work in a virtual environment where only compatible models will work. 
 
 ###Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Answer: Within the command line we could type 'python --version' to get the python version being used.
 
  
 
