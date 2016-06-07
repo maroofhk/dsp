@@ -30,13 +30,13 @@ What do the following commands do:
 
 Answer:
 Here is a discription of what each ls command does:
-'ls': this will list all the files in the current working directory. 
-'ls -a': list all files not ignoring entries that start with '.'
-'ls -l': list files in 'long format' which contains a lot of information such as, size of the file, owner of file, when it was last modified, etc.
-'ls -lh': same as 'ls -l' except in a more human readible form.
-'ls -lah': same as above except now we also have all files even containing those that start with '.'\
-'ls -t': show list of files / directory sorted by modified time.
-'ls -Glp': Here we list all file but without the list group with '/' appended to directories
+`ls: this will list all the files in the current working directory.`
+`ls -a: list all files not ignoring entries that start with .`
+`ls -l: list files in 'long format' which contains a lot of information such as, size of the file, owner of file, when it was last modified, etc.`
+`ls -lh': same as 'ls -l' except in a more human readible form.`
+`ls -lah': same as above except now we also have all files even containing those that start with '.'\`
+`ls -t': show list of files / directory sorted by modified time.`
+`ls -Glp: Here we list all file but without the list group with '/' appended to directories`
 
 ---
 
