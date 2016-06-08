@@ -20,7 +20,7 @@ Make sure that you know at least one of these well enough to do basic editing in
 
  * Emacs
  * vim
- * nano
+ * nano 
 
 You should know at least enough vim to be able to get out of it, because it is the default on many systems and you might find yourself in it even if you didn't mean to be.
 
