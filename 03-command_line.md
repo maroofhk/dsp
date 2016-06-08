@@ -53,9 +53,13 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 Answer:
 ls -m
+
 ls -r
+
 ls -d
+
 ls -o: like -l, but do not list group information
+
 ls -s: print size of each file
 
 
