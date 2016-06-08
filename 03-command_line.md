@@ -75,10 +75,13 @@ Answer:
 xargs will read the items from standard input and excute the command one or more times with the initial-arguments followed by the items that are read from standard input. 
 
 Take for example, we have the following files in a directory:
-> ls
+$ ls
+
 one.c one.h one.c two.h
 
 We would like to remove all the file that have extension '.c'. Using command such as: 
-> rm -rf find . -name '.c' 
+$ rm -rf find . -name '.c' 
+
 will not work since in this case we have a long list of parameters passed to a command. A better alternative is to apply xargs in the following way:
-> find . -name '.c' | xargs rm -rf
+
+$ find . -name '.c' | xargs rm -rf
