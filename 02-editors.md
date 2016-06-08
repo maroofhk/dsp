@@ -82,6 +82,6 @@ Some of the useful keyboard shortcuts are as follows:
 
 I have customized my editor two ways:
 1. Split working area into two screens with side bar showing folder structure on the left.
-2. Made backgound black so that it causes less eye strain.
+2. Made backgound black so that it causes less eye strain. 
 
  
