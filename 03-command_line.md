@@ -52,6 +52,7 @@ ls -Glp: Here we list all file but without the list group with '/' appended to d
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
 Answer:
+
 ls -m
 
 ls -r
