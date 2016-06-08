@@ -51,7 +51,13 @@ ls -Glp: Here we list all file but without the list group with '/' appended to d
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+Answer:
+ls -m
+ls -r
+ls -d
+ls -o: like -l, but do not list group information
+ls -s: print size of each file
+
 
 ---
 
@@ -59,7 +65,6 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+Answer:
  
 
