@@ -72,7 +72,7 @@ Answer: I will be using Sublime Text 2 as my graphical editor.
 
 I made this decision based on the flexibility Sublime offers in managing folders by projects. Also I have easily incorporated packages to check syntax of various languages I frequently use.
 
-One of the feature I really like in subime is the ability to make multiple edits at once. Hence I can changes many lines simultaneously without having to do so individually. Another feature I really like is split editing whereby I can manipulated multiple files simultaneously without having to switch back and forth between them. 
+One of the feature I really like in subime is the ability to make multiple edits at once. Hence I can change multiple lines simultaneously without having to do so individually. Another feature I really like is split editing whereby I can manipulated multiple files simultaneously without having to switch back and forth between them. 
 
 Some of the useful keyboard shortcuts are as follows:
 1. Cntr + G: go to line number
@@ -81,7 +81,7 @@ Some of the useful keyboard shortcuts are as follows:
 4. Cntr + KB: toggle between with and without folder side bar
 
 I have customized my editor two ways:
-1. Split working area into two screen with side bar showing folder structure on the left.
-2. Made backgound back so that it causes less eye strain.
+1. Split working area into two screens with side bar showing folder structure on the left.
+2. Made backgound black so that it causes less eye strain.
 
  
