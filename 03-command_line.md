@@ -23,7 +23,7 @@ What do the following commands do:
 `ls`  
 `ls -a`  
 `ls -l`  
-`ls -lh`  
+`ls -lh`   
 `ls -lah`  
 `ls -t`  
 `ls -Glp`  

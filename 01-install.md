@@ -24,7 +24,7 @@ spyder
 Second, inside any of those Python interpreters, you should be able to
 do all of these without error:
 
-```python
+```python 
 import numpy
 import scipy
 import matplotlib

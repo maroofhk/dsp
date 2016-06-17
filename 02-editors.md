@@ -20,7 +20,7 @@ Make sure that you know at least one of these well enough to do basic editing in
 
  * Emacs
  * vim
- * nano
+ * nano 
 
 You should know at least enough vim to be able to get out of it, because it is the default on many systems and you might find yourself in it even if you didn't mean to be.
 
@@ -82,6 +82,6 @@ Some of the useful keyboard shortcuts are as follows:
 
 I have customized my editor two ways:
 1. Split working area into two screens with side bar showing folder structure on the left.
-2. Made backgound black so that it causes less eye strain.
+2. Made backgound black so that it causes less eye strain. 
 
  
