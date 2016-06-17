@@ -1,6 +1,6 @@
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
-
+from operator import itemgetter
 
 def match_ends(words):
     """
@@ -15,8 +15,12 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
-    raise NotImplementedError
-
+    count = 0
+    for element in words:
+        if len(element) >= 2 and element[0] == element[-1]:
+            count += 1
+    return count
+    #raise NotImplementedError
 
 def front_x(words):
     """
@@ -32,8 +36,16 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    raise NotImplementedError
+    x_count = 0
+    lenWords = len(words)
+    for i in range(lenWords):
+        if words[i][0] == 'x':
+            words = [words.pop(words.index(words[i]))] + words
+            x_count += 1
 
+    wordPrime = sorted(words[:x_count]) + sorted(words[x_count:])
+    return wordPrime
+    #raise NotImplementedError
 
 def sort_last(tuples):
     """
@@ -49,8 +61,8 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    raise NotImplementedError
-
+    return sorted(tuples, key=itemgetter(1))
+    #raise NotImplementedError
 
 def remove_adjacent(nums):
     """
@@ -68,8 +80,18 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    raise NotImplementedError
-
+    
+    if len(nums) != 0:
+        #reduced_list = []
+        #reduced_list.append(nums[0])
+        reduced_list = [nums[0]]
+        for element in nums[1:]:
+            if element != reduced_list[-1]:
+                reduced_list.append(element)
+        return reduced_list
+    else:
+        return nums
+    #raise NotImplementedError
 
 def linear_merge(list1, list2):
     """
@@ -85,4 +107,20 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    raise NotImplementedError
+    E = []
+
+    while len(list1)!=0 and len(list2)!=0:
+        minA = min(list1)
+        minB = min(list2)
+        if minA < minB:
+            E.append(minA)
+            list1.pop(list1.index(minA))
+        else:
+            E.append(minB)
+            list2.pop(list2.index(minB))
+
+    if len(list1)!=0: E.extend(list1)
+    if len(list2)!=0: E.extend(list2)
+
+    return E
+    #raise NotImplementedError

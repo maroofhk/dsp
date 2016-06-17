@@ -1,6 +1,6 @@
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
-
+import math
 
 def donuts(count):
     """
@@ -18,8 +18,11 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
-
+    if count < 10:
+        return count
+    else:
+        return 'many'
+    #raise NotImplementedError
 
 def both_ends(s):
     """
@@ -37,8 +40,12 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
 
+    if len(s) >= 2:
+        return s[:2]+s[-2:]
+    else:
+        return ''
+    #raise NotImplementedError
 
 def fix_start(s):
     """
@@ -56,8 +63,10 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    start_letter = s[0]
+    return start_letter + s[1:].replace(start_letter, '*')
 
+    #raise NotImplementedError
 
 def mix_up(a, b):
     """
@@ -74,8 +83,11 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    first_word_2_chars = a[:2]
+    second_word_2_chars= b[:2]
 
+    return second_word_2_chars + a[2:] + ' ' + first_word_2_chars + b[2:]
+    #raise NotImplementedError
 
 def verbing(s):
     """
@@ -91,8 +103,14 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
-
+    if len(s) >= 3: 
+        if s[-3:] == 'ing':
+            return s + 'ly'
+        else:
+            return s + 'ing'
+    else:
+        return s
+    #raise NotImplementedError
 
 def not_bad(s):
     """
@@ -111,8 +129,16 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
-
+    not_index = s.find('not')
+    bad_index = s.find('bad')
+    if bad_index != -1 and not_index != -1:
+        if not_index < bad_index:
+            return s[:not_index] + 'good' + s[bad_index+3:]
+        else:
+            return s
+    else:
+        return s
+    #raise NotImplementedError
 
 def front_back(a, b):
     """
@@ -130,4 +156,7 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    str1_front = math.ceil(len(a)/2)
+    str2_front = math.ceil(len(b)/2)
+    return a[:str1_front] + b[:str2_front] + a[str1_front:] + b[str2_front:]
+    #raise NotImplementedError
