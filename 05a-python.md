@@ -61,7 +61,7 @@ for n in N:
     if n not in same:
         diff.append(n)
 
-# the result in both cases is [5,9,11,12]
+'''the result in both cases is [5,9,11,12]'''
 
 In terms of performance in finding elements in a set they are on average O(1) and worst case scanario O(n). This is due to it having the same implementation as dictionaries using hastables. 
 
@@ -99,16 +99,17 @@ List comprehension allows one to create lists in a concise way. It is a design p
 
 Below are two examples where list comprehension is used followed by equivalent 'map' and 'filter' expressions:
 
-# given inList 'squares_list_comp' makes an list of squares of this list. 'squares_map' does the same with 'map' expression
+'''given inList 'squares_list_comp' makes an list of squares of this list. 'squares_map' does the same with 'map' expression'''
 
 intList = [1,2,3,4,5]
 
 squares_list_comp = [x**2 for x in intList]
 squares_map = list(map(lambda x: x**2, intList))
 
-# 'filter_list_comp' filters out values from list 'squares_list_comp' elements that are less than 10. 
-# 'filter_function' does the same with 'filter expression'
-
+'''
+'filter_list_comp' filters out values from list 'squares_list_comp' elements that are less than 10. 
+'filter_function' does the same with 'filter expression'
+'''
 filter_list_comp = [x for x in squares_list_comp if x < 10]
 filter_function = list(filter(lambda x: x < 10, squares_list_comp))
 
@@ -118,8 +119,9 @@ import time
 
 start_time = time.clock()
 
-# run function under consideration
-
+'''
+run function under consideration
+'''
 print('time taken: %s seconds' % (time.clock() - start_time))
 
 Example of set comprehension:
@@ -142,10 +144,10 @@ tongue_twister_list = tongue_twister.split()
 word_count = {item: tongue_twister_list.count(item) for item in set(tongue_twister_list)}
 
 print(word_count)
-
-# result:
-# {'the': 1, 'piper': 4, 'if': 1, 'a': 3, 'picked': 4, 'pickled': 4, 'where': 1, 'peck': 4, 'of': 4, 'peter': 4, 'peppers': 4}
-
+'''
+result:
+{'the': 1, 'piper': 4, 'if': 1, 'a': 3, 'picked': 4, 'pickled': 4, 'where': 1, 'peck': 4, 'of': 4, 'peter': 4, 'peppers': 4}
+'''
 ---
 
 ###Complete the following problems by editing the files below:
