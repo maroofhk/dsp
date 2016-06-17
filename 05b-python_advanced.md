@@ -19,7 +19,7 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 
 ####Q1. Find how many different degrees there are, and their frequencies: Ex:  PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
 
->> Answer:
+>> Answer: 
 Function 'types_and_freq_of_degrees' determines the different degrees held by the faculty, along with the frequency of each degress. Output from the function is as follows:
 Counter({'PhD': 31, 'ScD': 6, 'MS': 2, 'MPH': 2, 'MD': 1, 'JD': 1, 'BSEd': 1, 'MA': 1})
 
