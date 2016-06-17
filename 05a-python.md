@@ -12,6 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
+>> Answer: 
 The similarities between lists and tuples are as follows:
 1. Both contain sequence of values that do not have to be of a certain type.
 2. We can  do add elements to both and also multiply them with a scaler
@@ -28,6 +29,7 @@ Tuples will work as keys in dicitonaries owing to the one reason that they are i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
+>> Answer:
 The similarities between list and sets are that the same as between as between lists and tuples mentioned above.
 The difference between lists and sets is that sets cannot have duplicate entries (values). 
 
@@ -69,7 +71,7 @@ In terms of performance in finding elements in a set they are on average O(1) an
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
-Answer:
+>> Answer:
 It is Pythons' version of an anonymous function, which is a function that is not bound to a name such as with def. This is created at runtime and does not need a return statement, unlike a normal function, and always contains an expression which is returned. Lamdba functions are mainly used in situations which require one requires use of a compact, readible code. A good example is its use in Python standard functions such as filter(), map() and reduce() each of which require in input a list and a function to add to list. We could use a standard function, but if the use case is temporary and to make code readible we resort to using lambda functions. An illustrative example is below:
 
 >>> from functools import reduce
@@ -92,7 +94,7 @@ An example where we use lambda function as the key argument to 'sorted' is as fo
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
-Answer:
+>> Answer:
 List comprehension allows one to create lists in a concise way. It is a design pattern that is borne off of the requirement to run loops efficiently, and in a human readible form. 
 
 Below are two examples where list comprehension is used followed by equivalent 'map' and 'filter' expressions:
@@ -156,7 +158,7 @@ a.
 date_start = '01-02-2013'    
 date_stop = '07-28-2015'
 ```
-Answer:
+>> Answer:
 Solution is in file 'q5_datetime.py' under heading (a). The output is 937 days.
 
 b.  
@@ -165,7 +167,7 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
-Answer:
+>> Answer:
 Solution is in file 'q5_datetime.py' under heading (b). The output is 513 days. 
 
 c.  
@@ -174,7 +176,7 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
-Answer:
+>> Answer:
 Solution is in file 'q5_datetime.py' under heading (c). The output is 7850 days.
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
