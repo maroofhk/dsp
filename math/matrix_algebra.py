@@ -63,4 +63,4 @@ print(np.dot(A, np.transpose(A)), '\n')
 
 # ------ 3.10) transpose(D)*D
 print('--- (Dt)D ----------')
-print(np.dot(np.transpose(D),D))
+print(np.dot(np.transpose(D),D)) 
